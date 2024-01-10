@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">aboutme(data binding)</string>
+    <string name="name">Janvi Tekwani</string>
+    <string name="star_image">"a star image "</string>
+    <string name="bio">"
+
+Janvi Tekwani: A Passionate Computer Science Student
+
+Janvi Tekwani, a 20-year-old student pursuing a Bachelor's degree in Computer Science, is a dynamic individual with a deep passion for technology and innovation. Hailing from a background that fosters curiosity and academic excellence, Janvi has consistently demonstrated a keen interest in the world of computer science.
+
+Born with a natural aptitude for problem-solving, Janvi embarked on her academic journey in the field of technology with a sense of purpose. Currently enrolled in the B.Tech Computer Science program, she is diligently working towards acquiring a comprehensive understanding of various aspects of computer science, from programming languages to algorithms and software development.
+
+Janvi's commitment to academic excellence is reflected not only in her coursework but also in her engagement with extra-curricular activities. She actively participates in coding competitions, hackathons, and tech-related events, showcasing her skills and eagerness to stay at the forefront of technological advancements.
+
+Beyond the academic realm, Janvi is known for her collaborative spirit and leadership qualities. "</string>
+    <string name="nicename">what is your nickname?</string>
+    <string name="done_button">Done</string>
+</resources>

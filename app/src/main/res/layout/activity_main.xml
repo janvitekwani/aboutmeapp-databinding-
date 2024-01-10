@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- when we add the linear layout in layout in the class named on xml file will be
+     formed -->
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="myName"
+            type="com.example.aboutmedatabinding.MyName" />
+            
+    </data> 
+        
+
+
+    <LinearLayout
+
+        android:id="@+id/nickname_edit"
+        style="@style/namestyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:textAlignment="center"
+        tools:context=".MainActivity"
+        tools:visibility="visible">
+
+        <TextView
+            style="@style/namestyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{myName.name}"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/nicename_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:hint="@string/nicename"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textAlignment="center"
+            android:textColor="#673AB7"
+            android:textColorHint="#5C5757" />
+
+        <Button
+            android:id="@+id/donebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:paddingTop="20dp"
+            android:text="@string/done_button"
+            app:cornerRadius="0dp"
+            />
+
+        <TextView
+            android:id="@+id/nicknametext"
+            style="@style/namestyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:visibility="gone"
+            android:textAlignment="center"
+            android:text="@{myName.nickname}"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/star_image"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/bio"
+                    android:textColor="#F5F0C5"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</layout>
+
+    <!-- you can create xml file if it not created by following steps
+     1)open res folder
+     2) right click res and in menu select new
+     3) then android resource file
+     4) in pop choice file name activity.main_xml , resources type - layout , root element - linear layout ,
+          source src- main , dictory name - layout
+      5) this will create xml file
+      -->
+
+    <!-- sp is the scaled pixel
+          string should not be hard code it should be in resource folder
+       -->
+    <!-- padding is spacing between our content and border, margin is the spacing outside the border
+            _ __________________
+           |    margin          |
+           |  _______________   |
+           |  |  __ border__ |  |
+           |  | | padding  | |  |
+           |  | | ________ | |  |
+           |  | |  content | |  |
+           |  |  __________  |  |
+           |  |   __________ |  |
+           |    ______________  |
+      -->
+
+    <!-- it is important to add content description  -->
+    <!-- now the style we have created is used in our textview as a textstyle by going on refactor than extract style  -->
+    <!-- a scrollview is a view that is scrollable it can contain only one
+          added view as a child which is the view it scrolls it can be textview / linearlayout etc -->
+
+    <!-- _____________________________________________________________________________________
+    layout : contains all kind of view groups and view in it
+
+
+
+
+       -->
